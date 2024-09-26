@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+</style>
+<body>
+    <input type="text" placeholder="full name" id="name"> <br>
+    <input type="number" placeholder="age" id="age"> <br>
+    <input type="number" placeholder="math-score" id="math"> <br>
+    <input type="number" placeholder="english-score" id="english">
+    <button type="sub" id="submitbutton" onclick="sub()">submit</button>
+<p id="para"></p>
+    <script>
+function sub() {
+    const myArray = []
+    myArray[0] = document.getElementById('name').value;
+    myArray[1] = document.getElementById('age').value;
+    myArray[2] = document.getElementById('english').value;
+    myArray[3] = document.getElementById('math').value;
+    const para = document.getElementById('para');
+    para.innerHTML = myArray[0] + ' is ' + myArray[1] + ' years old, and her score for english is ' + myArray[2] +
+    ' and for math is ' + myArray[3]
+}
+
+    //   document.getElementById('submitbutton').addEventListener('click',function(event) {
+    //     event.preventDefault();
+    //     const name = document.getElementById('name').value;
+    //     const age = document.getElementById('age').value;
+    //     const english = document.getElementById('english').value;
+    //     const math = document.getElementById('math').value;
+
+    //     const subject = [name , age,english, math];
+
+    //     const para = document.getElementById('para');
+    //     para.innerHTML = subject[0] + ' is ' + subject[1] + ' years old, and her score for english is ' + subject[2] +
+    //     ' and for math is ' + subject[3]
+    //   });
+     
+
+
+
+    </script>
+</body>
+</html>
